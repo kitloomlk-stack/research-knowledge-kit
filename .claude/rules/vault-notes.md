@@ -1,0 +1,22 @@
+---
+paths:
+  - "notes/**/*.md"
+  - "research/**/*.md"
+  - "wiki/**/*.md"
+---
+
+# Vault notes
+
+Applies to Markdown files in `notes/`, `research/` and `wiki/`.
+
+- Start with YAML frontmatter: `title`, `date` (ISO 8601), `status` (draft, reviewed or
+  stale), `sources` (list), `tags` (list).
+- Follow with a two-to-four line summary, then the detail.
+- One idea per note; the file name is the idea in kebab-case.
+- Use `[[wiki-links]]` if the vault already does, otherwise relative Markdown links. Do not
+  mix styles within one vault.
+- Every new note links to at least one existing note or index, and is linked from one.
+- Before renaming or deleting a note, search for links to it and update them.
+- Do not paste long passages from sources; summarize and link.
+- Keep tags few and reuse existing ones; check the vault before inventing a new tag.
+- Do not change the meaning of a reviewed note silently; update the date and note what changed.

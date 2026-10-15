@@ -1,0 +1,27 @@
+---
+paths:
+  - "handoff/**/*.md"
+  - "memory/**/*.md"
+---
+
+# Handoff and memory files
+
+Applies to Markdown files in `handoff/` and `memory/`.
+
+## Handoffs
+
+- File name `YYYY-MM-DD-topic.md`. Write them so a reader with no chat history can continue.
+- Sections: Goal, Current state, Decisions and why, Tried and failed, Next step (exact),
+  Files that matter, Open questions.
+- Facts only. No transcripts, no speculation presented as fact, no secrets, tokens or
+  personal data.
+- Name files by path and commands by their exact text so they can be checked.
+
+## Memory
+
+- `memory/decisions.md` holds decisions with date, reason and who agreed.
+  `memory/lessons.md` holds things that went wrong and the fix.
+- Append new entries with a date; do not silently rewrite old ones. Mark outdated entries
+  `stale` and say why.
+- Keep entries short, one idea each. Move long material into a note and link to it.
+- Before acting on a memory entry, verify it against the current code or docs.
